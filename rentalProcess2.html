@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent&Ride</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Ibarra+Real+Nova:wght@400;600;700&family=Inconsolata:wght@600&family=Inter&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Gelasio&family=Hubballi&family=Ibarra+Real+Nova:wght@400;600;700&family=Inconsolata:wght@600&family=Inria+Sans:ital@0;1&family=Inter&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+
+        <!----------- HEADER ---------->
+    <header class="Process2">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav" id="navlinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="rent.html">RENT</a></li>
+                    <li><a href="Profile.html"><img src="images/iannnn.png" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="rentalInfo">
+        <div class="promptInPaymentMethod">
+            <img src="images/close.png">
+            <h2>Thank you for choosing us for your rental need! We've receive your reservation.</h2>
+            <p class="Payment111"><span>Payment Method:</span>Cash on Pick-up. Please prepare accordingly.</p>
+            <p><span>Pick-up Location:</span>Christian Revival Fellowship in Campesao. Remeber to arrive at the specified time</p>
+            <p><span>Manage Your Reservation:</span>Check or modify your reservation in your profile.</p>
+            <h2>We appreciate your business and look forward to serving you!</h2>
+        </div>
+        <div class="renterInfo">
+            <div class="non-local-driver">
+                <h1>Non-local Drivers Information</h1>
+                <p><u class="localDriver" onclick="localDriver()">Local drivers click here</u></p>
+                <div class="name">
+                    <div class="fName">
+                        <input type="text" placeholder="First name" class="fName1" required>
+                    </div>
+                    <div class="lName">
+                        <input type="text" placeholder="Last name" class="lName1" required>
+                    </div>
+                </div>
+                <div class="birthdate">
+                    <div class="bDate">
+                        <input type="date" class="bDate1">
+                    </div>
+                    <div class="cNumber">
+                        <input type="text" placeholder="Contact number" class="cNumber1" required>
+                    </div>
+                </div>
+                <div class="license license1">
+                    <p>International Drivers Permit</p>
+                    <div class="upload upload1">
+                        <input type="file" accept="image/*" id="driverslicense1" onchange="driversLicense()">
+                        <label id="driversLabel" for="driverslicense">Upload file</label>
+                    </div>
+                </div>
+                <div class="license passport">
+                    <p>Passport</p>
+                    <div class="upload">
+                        <input type="file" accept="image/*" id="driverslicensePassport" onchange="Passport()">
+                        <label id="driversLabel" for="driverslicense">Upload file</label>
+                    </div>
+                </div>
+                <div class="location22">
+                    <h1>Locations</h1>
+                    <p>- within Borongan City <span>(where to deliver?)</span></p>
+                    <div class="locations22">
+                        <div class="barangay1">
+                            <input type="text" placeholder="Barangay" class="barangay" required>
+                        </div>
+                        <div class="street1">
+                            <input type="text" placeholder="Street" class="street" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="driversInfo">
+                <h1>Local Drivers Information</h1>
+                <p><u onclick="nonLocalDriver()">Non-local drivers click here</u></p>
+                <div class="name">
+                    <div class="fName">
+                        <input type="text" placeholder="First name" class="fName1" required>
+                    </div>
+                    <div class="lName">
+                        <input type="text" placeholder="Last name" class="lName1" required>
+                    </div>
+                </div>
+                <div class="birthdate">
+                    <div class="bDate">
+                        <input type="date" class="bDate1" id="bdateee" oninput="datee()">
+                    </div>
+                    <div class="cNumber">
+                        <input type="text" placeholder="Contact number" class="cNumber1" required>
+                    </div>
+                </div>
+                <div class="license DIP">
+                    <p>Drivers License</p>
+                    <div class="upload">
+                        <input type="file" accept="image/*" id="driverslicense" onchange="DIP()"> 
+                        <label id="driversLabel" for="driverslicense">Upload file</label>
+                    </div>
+                </div>
+                <div class="governmentID">
+                    <select name="gevernmentIDs" id="gevernmentIDs">
+                        <option>Government ID</option>
+                        <option>Passport</option>
+                        <option>PRC</option>
+                        <option>National ID</option>
+                    </select>
+                </div>
+                
+                <div class="location22">
+                    <h1>Locations</h1>
+                    <p>- within Borongan City <span>(where to deliver?)</span></p>
+                    <div class="locations22">
+                        <div class="barangay1">
+                            <input type="text" placeholder="Barangay" class="barangay" required>
+                        </div>
+                        <div class="street1">
+                            <input type="text" placeholder="Street" class="street" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="priceDetail">
+                <h1>Price Detail</h1>
+                <div class="PandR">
+                    <div class="pickUp">
+                        <h2>Pick Up</h2>
+                        <p>Date: <span>Oct 14, 2023</span></p>
+                        <p>Time: <span>09:00 AM</span></p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="return">
+                        <h2>Return</h2>
+                        <p>Date: <span>Oct 15, 2023</span></p>
+                        <p>Time: <span>09:00 AM</span></p>
+                    </div>
+                </div>
+                <h2 class="mRental">Motorbike Rental</h2>
+                <div class="rentalPrice">   
+                    <div class="motorQuantity">
+                        <p>Yamaha Aerox: <span>1 day</span></p>
+                        <p class="total1">Sub Total</p>
+                    </div>
+                    <div class="priceMotor">
+                        <p class="mPrice"><span >₱900 </span></p>
+                        <hr color="#0000" 
+                        size="2">
+                        <p class="total1">₱900</p>
+                    </div>
+                </div>
+                <h2 class="pdExtras">Extras</h2>
+                <div class="pExtras">
+                    <div class="extrasItem">
+                        <p>Driver</p>
+                        <p>Passenger Helmet</p>
+                        <p>Jacket</p>
+                        <p>Pants</p>
+                        <p>Gloves</p>
+                        <p id="wew">Helmet Holder</p>
+                        <p id="wew1">Phone Holder</p>
+                        <p id="wew2">Boots</p>
+                    </div>
+                    <div class="dropdown" onclick="seeMore()">
+                        <p class="seeMore">see more</p>
+                        <img src="images/icon/dropdown.png" class="dropdownimg">
+                    </div>
+                    <div class="extrasPrice">
+                        <p><span>₱1000</span></p>
+                        <p><span>₱200</span></p>
+                        <p><span>₱450</span></p>
+                        <p><span>₱450</span></p>
+                        <p><span>₱300</span></p>
+                        <p id="wew3"><span>₱400</span></p>
+                        <p id="wew4"><span>₱150</span></p>
+                        <p id="wew5"><span>₱450</span></p>
+                    </div>
+                </div>
+                <div class="totalnaTotal">
+                    <hr class="totalLine" color="#0000" 
+                            size="2">
+                        <div class="extrasTotal">
+                            <div class="eTotal">
+                                <p>Sub Total</p>
+                            </div>
+                            <div class="ePrice">
+                                <p>₱3400</p>
+                            </div>
+                        </div>
+                    <hr class="totalLine1" color="#850C0C" 
+                        size="2">
+                    <div class="priceTotal">
+                        <div class="pTotal">
+                            <p>Grand Total</p>
+                        </div>
+                        <div class="pPrice">
+                            <p>₱4300</p>
+                        </div>
+                    </div>
+                    <div class="paymentMethod">
+                        <h2>Payment Method</h2>
+                        <div class="cashORgcash">
+                            <div class="gCash" onclick="Gcash()">
+                                <img src="images/icon/gcash.png" id="gcashPicture">
+                            </div>
+                            <div id="Cash" onclick="cash()">
+                                <p class="cashit">Cash</p>
+                            </div>
+                        </div>
+                        <div class="continue" onclick="paymentMethod()">
+                            <a class="continuee">Continue with...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!----------- FOOTER ---------->
+        <footer class="footer">
+            <div class="row">
+                <div class="footer-col one">
+                    <img src="images/logo.png">
+                    <p>Don't dream it, Ride it!</p>
+                </div>
+                <div class="footer-col two">
+                    <h2>Contact Us</h2>
+                    <i class="fa fa-envelope"><span>Rent&ride@gmail.com</span></i><br>
+                    <i class="fa fa-phone"><span>+639700689814</span></i>
+                </div>
+                <div class="footer-col three">
+                    <h2>Follow Us</h2>
+                    <p>Stay connected with us on social media to get latest
+                        news and updates.
+                    </p>
+                    <div class="logo">
+                        <div class="facebook22">
+                            <img src="images/icon/ri_facebook-fill.png">
+                        </div>
+                        <div class="instagram22">
+                            <img src="images/icon/ri_instagram-fill.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reserved">
+                <p>All right reserved. © 2023</p>
+            </div>
+        </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

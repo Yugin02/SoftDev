@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent&Ride</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Hubballi&family=Ibarra+Real+Nova:wght@400;600;700&family=Inconsolata:wght@600&family=Inter&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Gelasio&family=Hubballi&family=Ibarra+Real+Nova:wght@400;600;700&family=Inconsolata:wght@600&family=Inter&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <!----------- HEADER ---------->
+    <header class="process1">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav" id="navlinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="rent.html">RENT</a></li>
+                    <li><a href=""><img src="images/iannnn.png" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="body">
+            <aside class="profile">
+                <h2>PROFILE</h2>
+                <div class="imageNiIan">
+                    <img src="images/Eugene.jpeg">
+                </div>
+                <h3>Details</h3>
+                <div class="userInfo">
+                    <div class="updateBtn">
+                        <p>UPDATE</p>
+                    </div>
+                    <div class="name1">
+                        <img src="images/icon/name.png">
+                        <p>Adriane Garcia</p>
+                    </div>
+                    <div class="birthDate1">
+                        <img src="images/icon/birthday.png">
+                        <p>May 1, 2023</p>
+                    </div>
+                    <div class="location1">
+                        <img src="images/icon/location.png">
+                        <p>Philippines</p>
+                    </div>
+                    <div class="mail">
+                        <img src="images/icon/mail.png">
+                        <p>adriane@gmail.com</p>
+                    </div>
+                    <div class="phone">
+                        <img src="images/icon/call.png">
+                        <p>09090905643</p>
+                    </div>
+                </div>
+                
+                <div class="loginInfo">
+                    <h3>Login Info</h3>
+                    <div class="password12">
+                        <p>Password</p>
+                        <span>Change</span>
+                    </div>
+                    <div class="google12">
+                        <div class="google13">
+                            <p>Google</p>
+                            <span>connected</span>
+                        </div>
+                        <span>Disconnect</span>
+                    </div>
+                    <div class="facebook12">
+                        <p>Facebook</p>
+                        <span>Connect</span>
+                    </div>
+                    <div class="logoutBtn">
+                        <a href="index.html">Log out</a>
+                    </div>
+                </div>
+                
+            </aside>
+            <section class="reservation12">
+                <h1>Reservation</h1>
+                <div class="reservationList">
+                    <div class="warapaRenta">
+                        <hr color="#fff" 
+                        size="2">
+                        <p>you didn't rent yet. <a href="rent.html">Rent now</a></p>
+                    </div>
+                    <div class="list1">
+                        <div class="closebtn">
+                            <h2>October 19, 2023(9:00) - October 20, 2023(9:00) </h2>
+                            <img src="images/close.png" onclick="confirmation()">
+                        </div>
+                        <div class="baraydan">
+                            <div class="motor">
+                                <p>Yamaha Aerox</p>
+                                <p>Other</p>
+                            </div>
+                            <div class="priceHanMotor">
+                                <p>₱900</p>
+                                <p>₱3400</p>
+                            </div>
+                        </div>
+                        <div class="totalHanBaraydan">
+                            <p>Total</p>
+                            <p>₱4300</p>
+                        </div>
+                        <div class="baraydanBtn">
+                            <div class="amend" onclick="amend()">
+                                <p>Amend</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="History">
+                        <h1>Rental History</h1>
+                        <hr color="#fff" 
+                        size="2">
+                        <h3>you have <span>0</span> rental history</h3>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="confirmation">
+            <p>Are you sure you want to <span>Cancel</span> your reservation?</p>
+            <div class="yesNo">
+                <div class="yes" onclick="confirmationConfirm()">
+                    <p>Yes</p>
+                </div>
+                <div class="no" onclick="confirmationCancel()">
+                    <p>No</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+        <!----------- FOOTER ---------->
+        <footer class="footer">
+            <div class="row">
+                <div class="footer-col one">
+                    <img src="images/logo.png">
+                    <p>Don't dream it, Ride it!</p>
+                </div>
+                <div class="footer-col two">
+                    <h2>Contact Us</h2>
+                    <i class="fa fa-envelope"><span>Rent&ride@gmail.com</span></i><br>
+                    <i class="fa fa-phone"><span>+639700689814</span></i>
+                </div>
+                <div class="footer-col three">
+                    <h2>Follow Us</h2>
+                    <p>Stay connected with us on social media to get latest
+                        news and updates.
+                    </p>
+                    <div class="logo">
+                        <div class="facebook22">
+                            <img src="images/icon/ri_facebook-fill.png">
+                        </div>
+                        <div class="instagram22">
+                            <img src="images/icon/ri_instagram-fill.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reserved">
+                <p>All right reserved. © 2023</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

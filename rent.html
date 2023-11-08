@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent&Ride</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Hubballi&family=Ibarra+Real+Nova:wght@400;600;700&family=Inconsolata:wght@600&family=Inter&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <!----------- HEADER ---------->
+    <header class="rent" id="rent">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav" id="navlinks">
+                <i class="fa fa-times" onclick="Hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="rent.html">RENT</a></li>
+                    <li><a href="Profile.html"><img src="images/iannnn.png" alt=""></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="Showmenu()"></i>
+        </nav>
+        <div class="rentals">
+            <div class="motorInformation">
+                <h1>Rentals</h1>
+                <div class="row motor-info" id="showinformation">
+                    <div class="rent-col1 colors" id="color">
+                        <p>Colors</p>
+                        <div class="color color0" id="color0">
+                        </div>
+                        <div class="color color1" id="color1">
+                        </div>
+                        <div class="color color2" id="color2">
+                        </div>
+                        <div class="color color3" id="color3">
+                        </div>
+                    </div>
+                    <div class="rent-col1">
+                        <img class="motor-rent Mimage" id="maincolor" src="images/yamahaAeroxWhite.png">
+                        <img class="motor-rent Mimage1" id="maincolor" src="images/yamahaAeroxBlue.png">
+                        <img class="motor-rent Mimage2" id="maincolor" src="images/yamahaAeroxCyan.png">
+                        <img class="motor-rent Mimage3" id="maincolor" src="images/yamahaAeroxBlack.png">
+                    </div>
+                    <div class="rent-col1 information" id="information">
+                        <h1 class="yamaha">Yamaha Aerox</h1>
+                        <img src="images/close.png" class="closebar" id="closebar" onclick="hideinfo()">
+                        <div class="row">
+                            <div class="info-col">
+                                <p><span>Type: </span>Tour</p>
+                                <p><span>Brand: </span>Yamaha</p>
+                                <p><span>CC: </span>155</p>
+                                <p><span>HP: </span>15.1</p>
+                            </div>
+                            <div class="info-col">
+                                <p><span>Weight: </span>126 kg</p>
+                                <p><span>Top Speed: </span>115 kmph</p>
+                                <p><span>Fuel Capacity: </span>5.5 L</p>
+                                <p><span>Seat Height: </span>790 mm</p>
+                            </div>
+                        </div>
+                        <h1 class="price-included">Included in the Price</h1>
+                        <div class="row">
+                            <div class="info-col freebies">
+                                <img src="images/helmet.png">
+                                <p>Free Helmet</p>
+                                <img src="images/check.png">
+                            </div>
+                            <div class="info-col freebies1">
+                                <img src="images/gas.png">
+                                <p>2ltr Fuel</p>
+                                <img src="images/check.png">
+                            </div>
+                        </div>
+                        <div class="rent-btn aeroxRentBtn">
+                            <div class="price">
+                                <p>₱900/day</p>
+                                <p><span>(₱800/day for rental 2 days or more)</span></p>
+                            </div>
+                            <a href="yamahaAerox.html">RENT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row yamahaMioGearInfo" id="yamahaMioGearInfo">
+                    <div class="rent-col1 mioGearColors" id="mioGearColors">
+                        <p>Colors</p>
+                        <div class="color mioGearColor0" id="mioGearColor0">
+                        </div>
+                        <div class="color mioGearColor1" id="mioGearColor1">
+                        </div>
+                        <div class="color mioGearColor2" id="mioGearColor2">
+                        </div>
+                        <div class="color mioGearColor3" id="mioGearColor3">
+                        </div>
+                    </div>
+                    <div class="mioGearImages">
+                        <img class="motor-rent mioGearBlack" id="yamahaMioGearColor" src="images/mioGearBlack.webp">
+                        <img class="motor-rent mioGearGray" id="yamahaMioGearColor" src="images/mioGearGray.webp">
+                        <img class="motor-rent mioGearMatteBlack" id="yamahaMioGearColor" src="images/mioGearMatteBlack.webp">
+                        <img class="motor-rent mioGearMatteBrown" id="yamahaMioGearColor" src="images/mioGearMatteBrown.webp">
+                    </div>
+                    <div class="rent-col1 mioGearInfo" id="mioGearInfo">
+                        <h1 class="yamaha">Yamaha Mio Gear</h1>
+                        <img src="images/close.png" class="closebar yamahaMioGearClose" id="closebar" onclick="hideinfo1()">
+                        <div class="row">
+                            <div class="info-col">
+                                <p><span>Type: </span>Tour</p>
+                                <p><span>Brand: </span>Yamaha</p>
+                                <p><span>CC: </span>125</p>
+                                <p><span>HP: </span>9.3</p>
+                            </div>
+                            <div class="info-col">
+                                <p><span>Weight: </span>150 kg</p>
+                                <p><span>Top Speed: </span>90 kmph</p>
+                                <p><span>Fuel Capacity: </span>4.2 L</p>
+                                <p><span>Seat Height: </span>750 mm</p>
+                            </div>
+                        </div>
+                        <div class="mioGearIncludedPrice">
+                            <h1 class="price-included">Included in the Price</h1>
+                            <div class="row">
+                                <div class="info-col freebies">
+                                    <img src="images/helmet.png">
+                                    <p>Free 2 Helmet</p>
+                                    <img src="images/check.png">
+                                </div>
+                                <div class="info-col freebies1">
+                                    <img src="images/gas.png">
+                                    <p>2ltr Fuel</p>
+                                    <img src="images/check.png">
+                                </div>
+                            </div>
+                            <div class="rent-btn">
+                                <div class="price">
+                                    <p>₱600/day</p>
+                                    <p><span>(₱500/day for rental 2 days or more)</span></p>
+                                </div>
+                                <a href="yamahaMioGear.html">RENT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hondaADVInfo" id="hondaADVInfo">
+                    <div class="rent-col1 hondaADVColors">
+                        <p>Colors</p>
+                        <div class="color ADVColor0">
+                        </div>
+                        <div class="color ADVColor1">
+                        </div>
+                        <div class="color ADVColor2">
+                    </div>
+                    <div class="ADVImages">
+                        <img class="motor-rent ADVWhite" src="images/hondaADVWhite.png">
+                        <img class="motor-rent ADVBlack" src="images/hondaADVBlack.png">
+                        <img class="motor-rent ADVRed" src="images/hondaADVRed.png">
+                    </div>
+                    <div class="rent-col1 ADVInfo" id="ADVInfo">
+                        <h1 class="hondaADV">Honda ADV 150</h1>
+                        <img src="images/close.png" class="closebar hondaADVClosebar" id="closebar" onclick="hideinfo2()">
+                        <div class="row">
+                            <div class="info-col">
+                                <p><span>Type: </span>Tour</p>
+                                <p><span>Brand: </span>Honda</p>
+                                <p><span>CC: </span>150</p>
+                                <p><span>HP: </span>14.34</p>
+                            </div>
+                            <div class="info-col">
+                                <p><span>Weight: </span>133 kg</p>
+                                <p><span>Top Speed: </span>110 kmph</p>
+                                <p><span>Fuel Capacity: </span>8 L</p>
+                                <p><span>Seat Height: </span>794 mm</p>
+                            </div>
+                        </div>
+                        <div class="ADVIncludedPrice">
+                            <h1 class="price-included">Included in the Price</h1>
+                            <div class="row">
+                                <div class="info-col freebies">
+                                    <img src="images/helmet.png">
+                                    <p>Free 2 Helmet</p>
+                                    <img src="images/check.png">
+                                </div>
+                                <div class="info-col freebies1">
+                                    <img src="images/gas.png">
+                                    <p>2ltr Fuel</p>
+                                    <img src="images/check.png">
+                                </div>
+                            </div>
+                            <div class="rent-btn">
+                                <div class="price">
+                                    <p>₱1000/day</p>
+                                    <p><span>(₱900/day for rental 2 days or more)</span></p>
+                                </div>
+                                <a href="hondaADV.html">RENT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row yamahaNMAXinfo" id="yamahaNMAXinfo">
+                    <div class="rent-col1 NMAXcolors">
+                        <p>Colors</p>
+                        <div class="color NMAXcolor0">
+                        </div>
+                        <div class="color NMAXcolor1">
+                        </div>
+                        <div class="color NMAXcolor2">
+                        </div>
+                        <div class="color NMAXcolor3">
+                        </div>
+                    </div>
+                    <div class="NMAXimages">
+                        <img class="motor-rent NMAXmedyoblue" src="images/NMAXmedyoblue.png">
+                        <img class="motor-rent NMAXblack" src="images/NMAXblack.png">
+                        <img class="motor-rent NMAXwhite" src="images/NMAXwhite.png">
+                        <img class="motor-rent NMAXgray" src="images/NMAXgray.png">
+                    </div>
+                    <div class="rent-col1 NMAXinfo" id="NMAXinfo">
+                        <h1 class="yamahaNMAX">Yamaha NMAX</h1>
+                        <img src="images/close.png" class="closebar NMAXclosebar" id="closebar" onclick="hideinfo3()">
+                        <div class="row">
+                            <div class="info-col">
+                                <p><span>Type: </span>Tour</p>
+                                <p><span>Brand: </span>Yamaha</p>
+                                <p><span>CC: </span>155</p>
+                                <p><span>HP: </span>14.34</p>
+                            </div>
+                            <div class="info-col">
+                                <p><span>Weight: </span>131 kg</p>
+                                <p><span>Top Speed: </span>106 kmph</p>
+                                <p><span>Fuel Capacity: </span>7.1 L</p>
+                                <p><span>Seat Height: </span>765 mm</p>
+                            </div>
+                        </div>
+                        <div class="NMAXincludedprice">
+                            <h1 class="price-included">Included in the Price</h1>
+                            <div class="row">
+                                <div class="info-col freebies">
+                                    <img src="images/helmet.png">
+                                    <p>Free 2 Helmet</p>
+                                    <img src="images/check.png">
+                                </div>
+                                <div class="info-col freebies1">
+                                    <img src="images/gas.png">
+                                    <p>2ltr Fuel</p>
+                                    <img src="images/check.png">
+                                </div>
+                            </div>
+                            <div class="rent-btn">
+                                <div class="price">
+                                    <p>₱1000/day</p>
+                                    <p><span>(₱900/day for rental 2 days or more)</span></p>
+                                </div>
+                                <a href="yamahaNMAX.html">RENT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row burgmanStreetInfo" id="burgmanStreetInfo">
+                    <div class="rent-col1 burgmanColors">
+                        <p>Colors</p>
+                        <div class="color BurgmanColor0">
+                        </div>
+                        <div class="color BurgmanColor1">
+                        </div>
+                        <div class="color BurgmanColor2">
+                        </div>
+                    </div>
+                    <div class="burgmanImages">
+                        <img class="motor-rent burgmanWhite" src="images/BurgmanWhite.webp">
+                        <img class="motor-rent burgmanblack" src="images/BurgmanBlack.webp">
+                        <img class="motor-rent burgmanRed" src="images/BurgmanMedyoRed.webp">
+                    </div>
+                    <div class="rent-col1 burgmanInfo" id="burgmanInfo">
+                        <h1 class="burgmanStreet">Suzuki Burgman 125</h1>
+                        <img src="images/close.png" class="closebar burgmanClosebar" id="closebar" onclick="hideinfo4()">
+                        <div class="row">
+                            <div class="info-col">
+                                <p><span>Type: </span>Tour</p>
+                                <p><span>Brand: </span>Suzuki</p>
+                                <p><span>CC: </span>124</p>
+                                <p><span>HP: </span>8.5</p>
+                            </div>
+                            <div class="info-col">
+                                <p><span>Weight: </span>110 kg</p>
+                                <p><span>Top Speed: </span>95 kmph</p>
+                                <p><span>Fuel Capacity: </span>5.5 L</p>
+                                <p><span>Seat Height: </span>780 mm</p>
+                            </div>
+                        </div>
+                        <div class="Burgmanincludedprice">
+                            <h1 class="price-included">Included in the Price</h1>
+                            <div class="row">
+                                <div class="info-col freebies">
+                                    <img src="images/helmet.png">
+                                    <p>Free 2 Helmet</p>
+                                    <img src="images/check.png">
+                                </div>
+                                <div class="info-col freebies1">
+                                    <img src="images/gas.png">
+                                    <p>2ltr Fuel</p>
+                                    <img src="images/check.png">
+                                </div>
+                            </div>
+                            <div class="rent-btn">
+                                <div class="price">
+                                    <p>₱900/day</p>
+                                    <p><span>(₱800/day for rental 2 days or more)</span></p>
+                                </div>
+                                <a href="suzukiBurgman.html">RENT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Rmotor" id="Rmotor">
+                <div class="row">
+                    <div class="rent-col yamahaAerox">
+                        <img class="motor-rent info yamahaAeroxBtnInfo" src="images/info.png" onclick="showinfo()">
+                        <img class="motor-rent yamahaAeroxWhite" src="images/yamahaAeroxWhite.png">
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>Yamaha Aerox 155</u></p>
+                            <p>₱900/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="yamahaAerox.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent-col yamahaMioGEar">
+                        <img class="motor-rent info" src="images/info.png" onclick="showinfo1()">
+                        <img class="motor-rent yamahaMioGear" src="images/mioGearBlack.webp">
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>Yamaha Mio Gear</u></p>
+                            <p>₱600/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="yamahaMioGear.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent-col HondaADV">
+                        <img class="motor-rent info" src="images/info.png" onclick="showinfo2()">
+                        <img class="motor-rent hondaADV" src="images/hondaADVWhite.png">
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>Honda ADV 150</u></p>
+                            <p>₱1000/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="hondaADV.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent-col motor4">
+                        <img class="motor-rent info" src="images/info.png" onclick="showinfo3()">
+                        <img class="motor-rent YamahaNMAX" src="images/NMAXwhite.png">
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>Yamaha NMAX</u></p>
+                            <p>₱1000/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="yamahaNMAX.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="rent-col yamahaNmaxdisplay">
+                        <img class="motor-rent info" src="images/info.png" onclick="showinfo3()">
+                        <img class="motor-rent YamahaNMAX" src="images/NMAXwhite.png">
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>Yamaha NMAX</u></p>
+                            <p>₱1000/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="yamahaNMAX.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent-col burgmanDisplay">
+                        <img class="motor-rent info" id="infobar" src="images/info.png" onclick="showinfo4()">
+                        <div class="burmagimage">
+                            <img class="motor-rent BurgmanStreet" src="images/BurgmanWhite.webp">
+                        </div>
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>Suzuki Burgman 125</u></p>
+                            <p>₱900/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="suzukiBurgman.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent-col">
+                        <img class="motor-rent info" src="images/info.png">
+                        <img class="motor-rent yamahaFazzio" src="images/yamahaFazzio.png">
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>Yamaha Fazzio</u></p>
+                            <p>₱600/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="rentalProcess1.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent-col XMAXdisplay">
+                        <img class="motor-rent info" src="images/info.png">
+                        <img class="motor-rent XMAX" src="images/xmax.png">
+                        <div class="rent1-row">
+                            <div class="rent1-col">
+                            <p><u>XMAX</u></p>
+                            <p>₱1100/day</p>
+                            </div>
+                            <div class="rent1-col rentt">
+                                <a href="rentalProcess1.html">Rent</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <!----------- FOOTER ---------->
+    <footer class="footer1" id="rent-footer">
+        <div class="row">
+            <div class="footer-col one">
+                <img src="images/logo.png">
+                <p>Don't dream it, Ride it!</p>
+            </div>
+            <div class="footer-col two">
+                <h2>Contact Us</h2>
+                <i class="fa fa-envelope"><span>Rent&ride@gmail.com</span></i><br>
+                <i class="fa fa-phone"><span>+639700689814</span></i>
+            </div>
+            <div class="footer-col three">
+                <h2>Follow Us</h2>
+                <p>Stay connected with us on social media to get latest
+                    news and updates.
+                </p>
+                <div class="logo">
+                    <div class="facebook22">
+                        <img src="images/icon/ri_facebook-fill.png">
+                    </div>
+                    <div class="instagram22">
+                        <img src="images/icon/ri_instagram-fill.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reserved">
+            <p>All right reserved. © 2023</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

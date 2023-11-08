@@ -1,0 +1,2560 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hubballi', sans-serif;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #383838 0%, rgba(43, 42, 42, 0) 100%);
+    overflow-x: hidden;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/image.png);
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid #6b0303 3px;
+    position: relative;
+}
+nav{
+    top: 0%;
+    background-color: #2B2B2B;
+    display: flex;
+    padding: 2% 6%;
+    border-bottom: solid #6b0303 5px;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    position: fixed;
+    width: 88%;
+    z-index: 100;
+}
+nav ul li img{
+    width: 40px;
+    padding-left: 50px;
+    margin: 0 0 -15px -20px;
+}
+nav ul li:last-child{
+    display: contents; /*contents*/
+}
+.home nav ul li:last-child{
+    display: none; /*contents*/
+}
+.notif{
+    position: absolute;
+    background-color: #6b0303;
+    bottom: 5%;
+    left: 40%;
+    transform: translateX(-50%);
+    position: fixed;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: solid 1px #fff;
+    z-index: 3;
+    transition: 1s;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+.notif a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 3;
+}
+.arrow{
+    background-color: #6b0303;
+    position: absolute;
+    rotate: 45deg;
+    height: 30px;
+    width: 30px;
+    margin: -15px 0 0 70px;
+    z-index: -1;
+}
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+nav ul{
+    margin-right: -30px;
+}
+nav img{
+    width: 150px;
+}
+.nav{
+    flex: 2;
+    display: block;
+    text-align: right;
+    left: 70%;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 50px 0 50px;
+    position: relative;
+}
+.nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+.nav ul li a:hover{
+    color: #d60a0a;
+    transition: .5s;
+}
+.logInProcess{
+    position: absolute;
+    top: 60%;
+    left: 23.5%;
+    display: flex;
+    opacity: 0;
+}
+.register{
+    margin: -50px 200px 0 -50px;
+    text-align: center;
+}
+.registeration h1{
+    position: absolute;
+    top: -30px;
+    right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+.register img{
+    position: absolute;
+    top: -128%;
+    left: -90px;
+    cursor: pointer;
+}
+.register p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Hubballi';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.register a{
+    font-size: 15px;
+    color: #fff;
+    padding: 2px 15px;
+    text-decoration: none;
+    border: 1px solid;
+    cursor: pointer;
+}
+.register a:hover{
+    color: #fff;
+    background-color: #d60a0a;
+    border-color: #d60a0a;
+    border-radius: 3px;
+    transition: .5s;
+}
+.username, .password, .email{
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    width: 319px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+.userName, .passWord, .eMail, .CpassWord {
+    outline: 0;
+    border: 0;
+    background: transparent;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 5px 0 0 5px;
+    padding: -100px 0 0 0;
+    width: 310px;
+}
+.logInProcess1 p{
+    color: #000;
+    font-family: Hubballi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: -1;
+}
+.logInProcess1{
+    margin: -190px 0 0 -30px;
+}
+.Lusername{
+    margin: 10px 0 50px 0;
+}
+.logInbtn{
+    border-radius: 50px;
+    border: 2px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    margin: 10px 0 10px 50px;
+    cursor: pointer;
+}
+.logInbtn p{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+}
+.logInProcess1 a{
+    color: #000;
+    margin-left: 80px;
+}
+.or{
+    text-align: center;
+    margin: 0 5px;
+}
+.gmail22{
+    display: flex;
+    justify-content: center;
+    border: solid 1px #000;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    gap: 20px;
+}
+.gmail22 img{
+    width: 25px;
+}
+.logInProcess1 h2{
+    text-align: center;
+    margin-top: -10px;
+    margin-right: -7px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+}
+.logInProcess1 span{
+    color: rgb(248, 3, 3);
+    position: absolute;
+    margin: -30px 0 0 70px;
+    visibility: hidden;
+}
+.orLine{
+    display: flex;
+}
+.orLine hr{
+    height: 0.1px;
+    margin-top: 10px;
+}
+.registeration{
+    top: 32%;
+    left: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    gap: 160px;
+    visibility: hidden;
+    align-items: center;
+    z-index: -1;
+}
+.logNotif{
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    right: 80px;
+}
+.logNotif p{
+    font-size: 20px;
+}
+.created{
+    margin-top: -20px;
+    color: rgb(32, 255, 32);
+    font-family: Hubballi;
+    font-weight: 600;
+    visibility: hidden;
+    
+}
+.emailExist{
+    visibility: hidden;
+    color: rgb(209, 5, 5);
+    font-family: Hubballi;
+    font-weight: 600;
+}
+.registerProcess{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.logIn{
+    margin-left: -3px;
+    margin-top: -27px;
+}
+.logIn p{
+    color: #FFF;
+    text-align: center;
+    font-family: Hubballi;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.logIn a{
+    font-size: 15px;
+    color: #fff;
+    padding: 2px 15px;
+    text-decoration: none;
+    border: 1px solid;
+    cursor: pointer;
+    margin: 0 0 0 113px ;
+}
+.logIn a:hover{
+    color: #fff;
+    background-color: #d60a0a;
+    border-color: #d60a0a;
+    border-radius: 3px;
+    transition: .5s;
+}
+.Lusername, .Lpassword{
+    margin-top: -3px;
+}
+.Lusername, .Lpassword, .Rusername, .eMail, .Rpassword, .CpassWord{
+    margin-left: 5px;
+}
+.registerProcess .Rusername, .registerProcess .eMail, .registerProcess .Rpassword, .registerProcess .CpassWord{
+    margin-top: -3px;
+}
+.CpassWord1{
+    margin-left: 1px;
+}
+.svg{
+    position: absolute;
+    top: 167px;
+    left: 115px;
+}
+.login{
+    width: 40%;
+    height: 65%;
+    position: absolute;
+    top: 57%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    background-color: #D9D9D980;
+    border-radius: 10px;
+    backdrop-filter: blur(3px) saturate(100%);
+    z-index: 3;
+}
+.alreadAcc{
+    margin-bottom: 8px;
+}
+.textbox{
+    text-align: center;
+    padding-right: 65px;
+}
+.textbox h1{
+    font-size: 30px;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+.textbox p{
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+.textbox p u{
+    font-size: 23px;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-size: 27px;
+    padding: 5px 30px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #000;
+    background: transparent;
+    position: relative;
+}
+.btn:hover{
+    background: #d60a0a;
+    border-color: #d60a0a;
+    color: #fff;
+    transition: .5s;
+}
+.image2, .image3{
+    position: absolute;
+    top: 24.5%;
+    left: 53%;
+    height: 450px;
+    z-index: 2;
+    transition: .5s;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.image2{
+    z-index: 3;
+}
+.text{
+    position: absolute;
+    top: 77%;
+    left: 60%;
+    color: #fff;
+    z-index: 4;
+}
+.text2{
+    position: absolute;
+    font-size: 15px;
+    top: 81%;
+    left: 65.5%;
+    color: #fff;
+    padding: 2px 15px;
+    text-decoration: none;
+    border: 1px solid;
+    cursor: pointer;
+    z-index: 5;
+}
+.text2:hover{
+    color: #fff;
+    background-color: #d60a0a;
+    border-color: #d60a0a;
+    border-radius: 3px;
+    transition: .5s;
+}
+nav .fa{
+    display: none;
+}
+.howItWorks{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.howItWorks h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Ibarra Real Nova";
+    letter-spacing: 5px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.howitworks-col{
+    flex-basis: 31%;
+    margin-bottom: 10%;
+    padding: 40px 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+.howitworks-col .text3{
+    font-family: "Ibarra Real Nova";
+    margin-bottom: 40px;
+    font-size: 25px;
+    border: 2px solid #850C0C;
+    padding: 10px;
+}
+.howitworks-col li{
+    font-size: 16px;
+    font-weight: 100;
+}
+.howitworks-col ol{
+    list-style-type: circle;
+}
+.howitworks-col li::marker{
+    color: #d60a0a;
+}
+.howitworks-col, hr{
+    position: center;
+    width: 100%;
+}
+.location{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.location h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Ibarra Real Nova";
+    letter-spacing: 5px;
+}
+.map{
+    margin: 5% 50px 70px;
+    width: 90%;
+    height: 500px;
+    border: 2px solid #850C0C;
+}
+iframe{
+    height: 500px;
+    width: 100%;
+}
+.reviews{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+.reviews-col{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 30px;
+}
+.reviews-col:nth-child(2){
+    margin-top: -30px;
+}
+.reviews h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Ibarra Real Nova";
+    letter-spacing: 3px;
+}
+.reviews-col .fa{
+    display: inline-block;
+    color: #FFC107;
+}
+.reviews-col p{
+    color: #aaaaaa;
+    font-family: Hubballi;
+    margin-top: 10px;
+
+}
+.reviews-col span{
+    color: #ffffff;
+    font-size: 15px;
+}
+.reviews-row{
+    margin: 80px 90px 50px;
+    gap: 100px;
+}
+.reviews-col img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+.ContactUs{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 100px 0;
+}
+.FAQsCallUs, .chatUsEmail{
+    display: flex;
+    max-width: 850px;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+.FAQsCallUs p, .chatUsEmail p{
+    margin: 20px 0 25px 0;
+    font-weight: 1;
+}
+.FAQsCallUs h2, .chatUsEmail h2{
+    font-weight: 1;
+    letter-spacing: 3px;
+}
+.FAQsCallUs a, .chatUsEmail a{
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 5px 10px;
+}
+.FAQsCallUs a:hover, .chatUsEmail a:hover{
+    background-color: #8b0a0a;
+    border: none;
+}
+.ContactUs span{
+    color: #b90f0f;
+    text-decoration: underline;
+}
+.chatUs{
+    width: 500px;
+}
+
+
+
+
+.footer{
+    margin-top: 70px;
+    position: relative;
+    bottom: 0%;
+    height: 300px;
+    background-color: #2B2B2B;
+    border-top: solid #850C0C 5px;
+}
+.footer img{
+    width: 150px;
+}
+.footer-col{
+    justify-content: space-between;
+    margin-top: -30px;
+    text-align: center;
+    flex-basis: 60%;
+}
+.footer h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Ibarra Real Nova";
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.logo img, .footer1 .logo img{
+    width: 30px;
+}
+.three{
+    margin-right: 50px;
+}
+.two span{
+    margin-left: 10px;
+}
+.two i{
+    display: flex;
+    text-align: left;
+    margin-left: 110px;
+}
+.reserved{
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+    padding: 30px 0;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+/* ----------- rentals --------*/
+
+.rent{
+    height: 101vh;
+    width: 100%;
+    position: relative;
+}
+.rentals{
+    position: relative;
+    top: 12%;
+}
+.rentals h1{
+    font-family: 'Ibarra Real Nova';
+    font-size: 40px;
+    font-weight: 400;
+    color: #FFF;
+    margin: 30px 0 0 50px;
+}
+.rentals .row{
+    margin: 50px 50px 100px 50px;
+}
+.rent-col{
+    width: 339px;
+    height: 414px;
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(83, 83, 83, 0.00) 100%);
+}
+.rent1-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 30px 0 30px;
+}
+.rent1-col a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #850C0C;
+    padding: 5px 30px;  
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(142, 142, 142, 0.25);
+}
+.rentt{
+    margin-top: 5%;
+    font-size: 20px;
+}
+.rentt a{
+    font-family: 'Ibarra Real Nova';
+}
+.info{
+    margin: 10px 0 0 280px;
+    cursor: pointer;
+}
+.rent1-col p, .rent1-col p u{
+    font-family: 'Forum';
+    font-size: 20px;
+}
+.rent1-col u{
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+.motor-info{
+    height: 60vh;
+    position: relative;
+}
+.color{
+    margin: 10px 0 15px 10px;
+    width: 80px;
+    height: 65px;
+    cursor: pointer;
+    
+}
+#maincolor{
+    position: absolute;
+    left: 170px;
+}
+.Mimage1, .Mimage2, .Mimage3{
+    visibility: hidden;
+}
+.yamahaAeroxWhite{
+    width: 270px;
+    margin-left: 20px;
+}
+.yamahaMioGear{
+    width: 270px;
+    margin-left: 20px;
+}
+.hondaADV{
+    width: 330px;
+    margin: 40px 0 40px 12px;
+}
+.color0{
+    width: 30px;
+    border: solid 2px #d60a0a;
+    height: 30px;
+    background-color: #fff;
+    margin-left: 9px;
+}
+.color1{
+    width: 30px;
+    height: 30px;
+    background-color: #000099;
+}
+.color2{
+    width: 30px;
+    height: 30px;
+    background-color: #00ffff;
+}
+.color3{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+}
+.colors, #maincolor{
+    margin-left: -700px;
+}
+.rent-col1 .motor-rent{
+    margin: 50px 110px 0 0;
+    width: 450px;
+}
+#maincolor{
+    margin-top: 10px;
+}
+.information{
+    height: 522px;
+    width: 565px;
+    border: 2px solid #850C0C;
+    background: #D9D9D9;
+    margin-top: -70px;
+    position: absolute;
+    right: -650px;
+}
+.information .yamaha{
+    color: #000;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.motor4{
+    display: none;
+}
+.info-col{
+    color: #000;
+    margin: -30px 40px 0 40px;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+}
+.info-col span{
+    font-weight: 600;
+}
+.info-col p{
+    margin-bottom: 15px;
+}
+.information .price-included{
+    color: #000;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;   
+    margin-top: -50px;
+    text-decoration: underline;
+}
+.freebies{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    justify-content: space-between;
+}
+.freebies1{
+    display: flex;
+    width: 115px;
+    height: 20px;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+.freebies p, .freebies1 p, .freebies2 p{
+    font-family: 'Hubballi';
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+.rent-btn{
+    text-align: center;
+    color: #000;
+    margin-top: -70px;
+}
+.rent-btn p{
+    font-family: 'Hubballi';
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #272727;
+    line-height: normal;
+}
+.aeroxRentBtn{
+    margin-top: -60px;
+}
+.rent-btn span{
+    color: #272727;
+    font-family: Hubballi;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.price{
+    margin: 10px 0 20px
+}
+.rent-btn a{
+    text-decoration: none;
+    font-family: 'Ibarra Real Nova';
+    background-color: #850C0C;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 5px 40px;
+}
+.Rmotor{
+    position: relative;
+    height: 100vh;
+    top: -75vh; /* -75vh */
+}
+.closebar{
+    position: absolute;
+    right: 3%;
+    margin-top: -50px;
+    cursor: pointer;
+}
+.yamahaMioGearInfo{
+    position: absolute;
+    top: 0;
+    color: #000;
+}
+.mioGearImages{
+    margin: 0 630px 100px 0;
+    display: flex;
+}
+.mioGearImages img{
+    width: 450px;
+}
+#yamahaMioGearColor{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.mioGearInfo h1{
+    color: #000;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.mioGearInfo{
+    margin: -18.5px 0 0 1px;
+    height: 522px;
+    width: 565px;
+    border: 2px solid #850C0C;
+    background: #D9D9D9;
+    
+}
+.mioGearInfo{
+    margin-left: 1300px;
+}
+.mioGearColors{
+    margin-top: 50px;
+    color: #fff;
+}
+.mioGearIncludedPrice{
+    margin-top: -50px;
+}
+.yamahaMioGearClose{
+    margin-right: -20px;
+}
+.mioGearColor0{
+    width: 30px;
+    border: solid 2px #d60a0a;
+    height: 30px;
+    background-color: #000;
+    margin-left: 9px;
+}
+.mioGearColor1{
+    width: 30px;
+    height: 30px;
+    background-color: #BB8D6F;
+}
+.mioGearColor2{
+    width: 30px;
+    height: 30px;
+    background-color: #171717;
+}
+.mioGearColor3{
+    width: 30px;
+    height: 30px;
+    background-color: #676765;
+}
+.mioGearGray, .mioGearMatteBlack, .mioGearMatteBrown{
+    visibility: hidden;
+}
+.mioGearColors, .mioGearImages img{
+    margin-left: -600px;
+}
+.hondaADVInfo{
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+.ADVInfo{
+    margin: -245px 0 0 2097px;
+    height: 522px;
+    width: 565px;
+    border: 2px solid #850C0C;
+    background: #D9D9D9;
+}
+.ADVInfo h1{
+    color: #000;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.ADVImages img{
+    position: absolute;
+}
+.ADVImages{    
+    margin: -150px 0 0 -670px;
+}
+.hondaADVColors{
+    margin: 50px 0 0 -600px;
+}
+.ADVColor0{
+    width: 30px;
+    border: solid 2px #d60a0a;
+    height: 30px;
+    background-color: #fff;
+    margin-left: 9px;
+}
+.ADVColor1{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+}
+.ADVColor2{
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+}
+.ADVIncludedPrice{
+    margin-top: -50px;
+}
+.hondaADVClosebar{ 
+    margin-right: -15px;
+}
+.ADVBlack, .ADVRed{
+    visibility: hidden;
+}
+.ADVImages .motor-rent{
+    width: 550px;
+}
+.yamahaNMAXinfo{
+    position: absolute;
+    display: flex;
+    top: 0;
+}
+.NMAXinfo{
+    margin: -245px 0 0 697px;
+    height: 522px;
+    width: 565px;
+    border: 2px solid #850C0C;
+    background: #D9D9D9;
+}
+.yamahaNMAXinfo h1{
+    color: #000;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.NMAXimages img{
+    position: absolute;
+}
+.NMAXimages{    
+    margin: -150px 0 0 0px;
+}
+.NMAXcolors{
+    margin: 50px 0 0 -600px;
+}
+.NMAXcolor0{
+    width: 30px;
+    border: solid 2px #d60a0a;
+    height: 30px;
+    background-color: #fff;
+    margin-left: 9px;
+}
+.NMAXcolor1{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+}
+.NMAXcolor2{
+    width: 30px;
+    height: 30px;
+    background-color: #808080;
+}
+.NMAXcolor3{
+    width: 30px;
+    height: 30px;
+    background-color: #1F4552;
+}
+.NMAXincludedprice{
+    margin-top: -50px;
+}
+.NMAXclosebar{ 
+    margin-right: -15px;
+}
+.NMAXimages, .NMAXinfo{
+    margin-top: 100px;
+}
+.NMAXinfo{
+    margin: -20px 0 0 2224px;
+}
+.NMAXimages img{
+    width: 500px;
+    margin-left: -435px;
+}
+.YamahaNMAX{
+    width: 330px;
+}
+.NMAXmedyoblue, .NMAXblack, .NMAXgray{
+    visibility: hidden;
+}
+.burgmanStreetInfo{
+    position: absolute;
+    display: flex;
+    top: 0;
+}
+.burgmanInfo{
+    margin: -245px 0 0 697px;
+    height: 522px;
+    width: 565px;
+    border: 2px solid #850C0C;
+    background: #D9D9D9;
+}
+.burgmanInfo h1{
+    color: #000;
+    font-family: 'Ibarra Real Nova';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.burgmanImages img{
+    position: absolute;
+}
+.burgmanImages{    
+    margin: -150px 0 0 0px;
+}
+.burgmanColors{
+    margin: 50px 0 0 -600px;
+}
+.BurgmanColor0{
+    width: 30px;
+    border: solid 2px #d60a0a;
+    height: 30px;
+    background-color: #fff;
+    margin-left: 9px;
+}
+.BurgmanColor1{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+}
+.BurgmanColor2{
+    width: 30px;
+    height: 30px;
+    background-color: #522727;
+}
+.Burgmanincludedprice{
+    margin-top: -50px;
+}
+.burgmanClosebar{ 
+    margin-right: -15px;
+}
+.burgmanImages, .burgmanInfo{
+    margin-top: 100px;
+}
+.burgmanInfo{
+    margin: -20px 0 0 2224px;
+}
+.burgmanImages img{
+    width: 900px;
+    margin: -130px 0 0 -600px;
+}
+.BurgmanStreet{
+    width: 600px;
+    margin: -80px 0 -60px -130px;
+}
+.burgmanblack, .burgmanRed{
+    visibility: hidden;
+}
+.BurgmanStreet{
+    border-top-right-radius: 90%;
+}
+.yamahaFazzio{
+    width: 320px;
+    margin: -30px 0 -40px 5px;
+}
+.XMAX{
+    width: 320px;
+    margin: -30px 0 -40px 5px;
+}
+.XMAXdisplay{
+    display: none;
+}
+
+
+
+/* ----------- Rental Process 1 --------*/
+.process1{
+    height: 140vh; 
+    width: 100%; 
+    position: relative;
+}
+.process1-1 h1{
+    padding: 130px 0 0 50px;
+    color: #FFF;
+    font-family: 'Ibarra Real Nova';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+}
+.row-process1{
+    margin: 0 70px;
+}
+.motor-specs{
+    display: flex;
+    margin: 20px 0 25px 0;
+}
+.motor-specs img{
+    margin: 0 7px 7px 0;
+}
+.motor-specs p{
+    color: #FFF;
+    font-family: Hubballi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3px;
+}
+.payment{
+    width: 452px;
+    height: 539px;
+    border: 2px solid #850C0C;
+    background: #D9D9D9;
+    box-shadow: -16px 12px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: -50px;
+}
+.process1-col .motor-img{
+    margin: 10px 90px 0 0;
+}
+.motor-img img{
+    width: 420px;
+    margin: 10px 0 90px 20px;
+}
+.icldprce-col-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 100px 0 -120px;
+}
+.icldprce-row{
+    display: flex;
+}
+.icldprce-row p{
+    margin: 0 10px;
+    color: #FFF;
+    font-family: Hubballi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.icldprce-row img{
+    height: 23px;
+}
+.icldprce-col{
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 60px;
+}
+.icldprce-col p{
+    margin-right: 100px;
+    color: #FFF;
+    font-family: Forum;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.icldprce{
+    margin: 30px;
+}
+.icldprce p{
+    margin-bottom: 20px;
+}
+.payment .rental-day{
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 10px 0;
+}
+.payment .rental-price{
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.payment .rental-promo{
+    color: #4E4E4E;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.payment .rental-day, .payment .rental-price, .payment .rental-promo{
+    font-family: Gelasio;
+    text-align: center;
+}
+.payment hr{
+    margin-left: 90px;
+    width: 60%;
+    color: #6b0303;
+}
+.icldprce, .textExtras, .extras{
+    margin: -160px 0 20px 0;
+}
+.motorcycle{
+    height: 30px;
+    width: 38%;
+    margin: 25px 0 0 140px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+.motorcycle-sub{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    border: solid 2px #6b0303;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.motorcycle-sub1{
+    width: 30px;
+    text-align: center;
+    border-bottom: solid 2px #6b0303;
+    border-top: solid 2px #6b0303;
+    border-right: solid 2px #6b0303;
+    color: #6b0303;
+    cursor: pointer;
+    user-select: none;
+}
+.motorcycle-sub2{
+    width: 30px;
+    text-align: center;
+    border-bottom: solid 2px #6b0303;
+    border-top: solid 2px #6b0303;
+    border-right: solid 2px #6b0303;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    color: #6b0303;
+    user-select: none;
+}
+.motorcycle-sub1:hover, .motorcycle-sub2:hover{
+    background-color: #6b0303;
+    color: #fff;
+}
+.date-time{
+    color: #000;
+    margin: 30px 60px 0 60px;
+}
+.date-time p{
+    color: #000;
+    font-family: Gelasio;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.date, .time{
+    display: flex;
+    border: solid 2px #6b0303;
+    padding: 3px 25px;
+    border-radius: 10px;
+}
+.time{
+    padding: 3px 10px;
+}
+.departure-date-time, .returning-date-time{
+    display: flex;
+    justify-content: space-between;
+}
+.departure-date-time p, .returning-date-time p{
+    padding: 3px 10px;
+}
+.departure{
+    margin-bottom: 20px;
+}
+.check-out{
+    color: #000;
+    margin-top: 50px;
+    text-align: center;
+}
+.check-out p{
+    color: #850C0C;
+    text-align: center;
+    font-family: Hubballi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.check-out img{
+    margin-left: 5px;
+}
+.check-out-btn{
+    background-color: #850C0C;
+    border-radius: 10px;
+    width: 121px;
+    padding: 5px 0;
+    margin-left: 38%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.check-out-btn a{
+    color: #FFF;
+    font-family: Gelasio;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.check-out-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.check-out-text1{
+    display: flex;
+    justify-content: center;
+}
+.cout1{
+    padding: 0 10px 0;
+}
+.extras{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 0 -120px;
+    gap: 50px;
+}
+.extras-1-1{
+    display: flex;
+}
+.extras p{
+    margin-bottom: 20px;
+}
+.textExtras{
+    margin: -120px 0 25px 0;
+}
+.textExtras h1{
+    color: #FFF;
+    font-family: Forum;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 130px;
+}
+.icldprce{
+    margin-left: 100px;
+}
+.checkbox{
+    border: solid 2px #850C0C;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.checkbox img{
+    padding: 3px 3px;
+    visibility: hidden;
+}
+.extras-1-1 p{
+    color: #FFF;
+    font-family: Hubballi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.extras-1-1 span{
+    color: #850C0C;
+    font-family: Hubballi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.line{
+    width: 60%;
+    margin: 70px 0 70px 260px;
+}
+.rentalConditions{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    align-items: center;
+}
+.rentalConditions h1{
+    margin-top: 50px;
+    text-align: center;
+    text-align: center;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.rentalConditions li{
+    margin-bottom: 10px;
+}
+.booking-list span{
+    text-decoration: underline;
+    color: #d60a0a;
+    cursor: pointer;
+}
+.conditions{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 0 6%;
+    width: 250px;
+}
+.conditionLine{
+    width: 80%;
+    margin: 50px 0 0 140px;
+}
+.title{
+    text-align: center;
+    border: 2px solid #850C0C;
+    width: 181px;
+    height: 70px;
+    padding: 12px 0px 11px 1px;
+}
+.title h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Ibarra Real Nova;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.title-liability{
+    width: 181px;
+    height: 36px;
+    padding: 30px 0px 27px 1px;
+}
+.booking-list ol{
+    list-style-type: circle;
+}
+.booking-list li::marker{
+    color: #d60a0a;
+}
+.booking-title{
+    margin: 0 50px 30px 30px;
+}
+.conditions p{
+    color: #FFF;
+    font-family: 'Hubballi';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.motorcycleC-list li::marker{
+    color: #d60a0a;
+}
+.motorcycleC-title{
+    margin: 0 50px 30px 30px;
+}
+.MotorcycleC{
+    margin-left: 40px;
+}
+.rentalTerm-list li::marker{
+    color: #d60a0a;
+}
+.rentalTerm-title{
+    margin: 0 50px 30px 30px;
+}
+.RentalTerm{
+    margin-left: 40px;
+}
+.liability-list li::marker{
+    color: #d60a0a;
+}
+.title-liability{
+    margin: 0 50px 30px 30px;
+}
+.Liability{
+    margin-left: 40px;
+}
+.yamahaAeroxBlack, .yamahaAeroxBlue, .yamahaAeroxCyan{
+    display: none;
+}
+.honda-motor-img{
+    padding: 100px 0 40px 15px;
+}
+.NMAX-motor-img{
+    padding: 40px 20px 10px 0;
+}
+.NMAX-motor-img img{
+    width: 500px;
+}
+.burgman-motor img{
+    width: 900px;
+    position: absolute;
+    margin: -600px 0 0 -200px;
+}
+.burgmanprocess{
+    margin-top: 550px;
+}
+
+
+/* ----------- Rental Process 2 --------*/
+.rentalInfo{
+    height: 150vh;
+}
+.renterInfo{
+    position: relative;
+    top: 15%;
+    margin: 0;
+    display: flex;
+}
+.driversInfo h1, .non-local-driver h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Ibarra Real Nova;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.driversInfo u, .non-local-driver u{
+    color: #b91717;
+    font-family: Ibarra Real Nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+.driversInfo p, .non-local-driver p{
+    text-align: center;
+}
+.driversInfo{
+    width: 50%;
+    padding-top: 80px;
+    visibility: visible;
+}
+.name{
+    display: flex;
+    margin: 30px -30px 50px 50px;
+    justify-content: space-between;
+}
+.fName{
+    border-bottom: 2px solid #850C0C;
+    border-left: 2px solid #850C0C;
+    width: 243px;
+    height: 38px;
+    flex-shrink: 0;
+}
+.fName1::placeholder{
+    color: #545454;
+    font-style: italic;
+}
+.fName1{
+    width: 220px;
+    outline: 0;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    padding: 3px 0 0 10px;
+    font-family: 'Inria Sans';
+    font-size: 25px;
+}
+.lName{
+    border-bottom: 2px solid #850C0C;
+    border-left: 2px solid #850C0C;
+    width: 243px;
+    height: 38px;
+    flex-shrink: 0;
+}
+.lName1{
+    outline: 0;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    padding: 3px 0 0 10px;
+    font-family: 'Inria Sans';
+    font-size: 25px;
+    width: 220px;
+}
+.lName1::placeholder{
+    color: #545454;
+    font-style: italic;
+}
+.birthdate{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -30px 50px 50px;
+}
+.bDate1{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #545454;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Inria Sans';
+    padding: 0 0 0 10px;
+    cursor: text;
+}
+.bDate{
+    border-bottom: 2px solid #850C0C;
+    border-left: 2px solid #850C0C;
+    height: 38px;
+    flex-shrink: 0;
+}
+.time input[type="time"]{
+    width: 100%;
+    background: transparent url(images/icon/time.png);
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-position: 100%;
+    font-family: Gelasio;
+    font-size: 13.5px;
+}
+.time input[type="time"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
+.date input[type="date"]{
+    width: 100%;
+    background: transparent url(images/icon/calendar.png);
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-position: 100%;
+    font-family: Gelasio;
+    font-size: 13.5px;
+}
+.date input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1);
+    opacity: .27;
+  }
+.cNumber{
+    border-bottom: 2px solid #850C0C;
+    border-left: 2px solid #850C0C;
+    width: 243px;
+    height: 38px;
+    flex-shrink: 0;
+}
+.cNumber1{
+    outline: 0;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    padding: 3px 0 0 10px;
+    font-family: 'Inria Sans';
+    font-size: 25px;
+    width: 220px;
+}
+.cNumber1::placeholder{
+    color: #545454;
+    font-style: italic;
+}
+.license{
+    border-bottom: 2px solid #850C0C;
+    border-left: 2px solid #850C0C;
+    width: 280px;
+    height: 38px;
+    flex-shrink: 0;
+    margin-left: 50px;
+}
+.license p{
+    color: #545454;
+    font-family: 'Inria Sans';
+    font-size: 25px;
+    margin-right: 120px ;
+}
+.DIP p{
+    margin-right: 100px; 
+    font-size: 25px;
+}
+.tConditions{
+    display: flex;
+    margin: 20px 0 30px 50px;
+}
+.tConditions p{
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+.tConditions .checkbox{
+    margin-top: 3px;
+}
+.priceDetail{
+    width: 542px;
+    height: 833px;
+    border: 2px solid #850C0C;
+    background: #D9D9D9;
+    margin-left: 70px;
+}
+.PandR{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+}
+.line{
+    border-left: solid 1px #850C0C;
+    width: 1px;
+    position: absolute;
+    height: 79px;
+    top: 50px;
+    right: 25%;
+}
+.priceDetail h1{
+    color: #000;
+    text-align: center;
+    font-family: Ibarra Real Nova;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 30px 0;
+}
+.priceDetail h2{
+    color: #850C0C;
+    font-family: Inria Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.priceDetail p{
+    color: #000;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0 10px -30px;
+}
+.priceDetail span{
+    color: #4F4F4F;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pickUp{
+    margin-left: 25px;
+}
+.rentalPrice{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 95px;
+}
+.mRental{
+    margin-left: 177px;
+    margin-top: 30px;
+}
+.priceMotor hr{
+    width: 100px;
+    position: absolute;
+    right: 125px;
+    top: 318px;
+}
+.total1{
+    color: #000;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mPrice{
+    padding-top: 5px 0 0;
+}
+.pExtras{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 95px 0 100px;
+}
+.extrasPrice{
+    text-align: center;
+}
+.pdExtras{
+    margin-left: 230px;
+}
+.pExtras p{
+    margin-bottom: -10px;
+}
+.totalLine{
+    width: 100px;
+    position: absolute;
+    right: 125px;
+    margin-top: 10px;
+}
+.extrasTotal{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 95px 0 100px;
+}
+.totalLine1{
+    width: 70%;
+    margin: 10px 0 0 80px;
+}
+.priceTotal{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 90px 0 100px;
+}
+.priceTotal p{
+    color: #000;
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#driverslicense, #driverslicensePassport, #driverslicense1 {
+    display: none;
+}
+#driversLabel {
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 1px solid #6b0303;
+    border-radius: 4%;
+    color: #fff;
+    cursor: pointer;
+}
+.upload{
+    margin: -30px 0 0 190px;
+}
+.governmentID{
+    border-bottom: 2px solid #850C0C;
+    border-left: 2px solid #850C0C;
+    width: 280px;
+    height: 38px;
+    margin: 40px 0 0 50px;
+}
+.governmentID select{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Inria Sans';
+    width: 280px;
+    font-size: 25px;
+}
+select option{
+    color: #000;
+}
+.fbGmailLogIn p{
+    color: #545454;
+    font-family: 'Inria Sans';
+    font-size: 20px;
+}
+.fbGmailLogIn span{
+    color: #850C0C;
+}
+.fbGmailLogIn{
+    margin: 0 0 0 90px;
+}
+.facebook, .gmail{
+    border: solid 2px #545454;
+    border-radius: 50px;
+    padding: 5px 20px;
+    width: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.btnLogIn{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+.facebook p, .gmail p{
+    color: #545454;
+    font-family: Inria Sans;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+.gmail img{
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+.facebook img{
+    margin-bottom: 3px;
+}
+.facebook:hover, .gmail:hover{
+    color: #850C0C;
+    border-color: #850C0C;
+}
+.cashORgcash{
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.paymentMethod{
+    align-items: center;
+    text-align: center;
+}
+.gCash, #Cash{
+    border: solid 2px #000;
+    width: 150px;
+    border-radius: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+#Cash p{
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 1px 0 0 ;
+}
+.cashit{
+    color: #000;
+}
+.continue{
+    background-color: #850C0C;
+    width: 300px;
+    height: 38px;
+    border-radius: 50px;
+    margin-left: 23%;
+    padding: 10px 0 0 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.continue a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Gelasio;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+}
+.non-local-driver{
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    visibility: hidden;
+}
+.non-local-driver .license{
+    padding-left: 10px;
+    width: 370px;
+    margin-bottom: 40px;
+}
+.non-local-driver .license p{
+    font-size: 20px;
+    font-style: italic;
+}
+.non-local-driver .upload{
+    font-size: 20px;
+    margin-left: 250px;
+}
+.non-local-driver .passport{
+    width: 170px;
+}
+.non-local-driver .passport .upload{
+    margin-left: 90px;
+}
+.non-local-driver .btnLogIn{
+    margin-left: 50px;
+}
+.non-local-driver .name{
+    gap: 165px;
+}
+#gevernmentIDs option:first-child{
+    display: none;
+}
+.dropdown{
+    margin: 110px 90px 0 0;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s;
+}
+.dropdown p{
+    color: #6b0303;
+}
+.dropdown img{
+    margin-right: 30px;
+    transition: .5s;
+}
+#wew, #wew1, #wew2, #wew3, #wew4, #wew5{
+    visibility: hidden;
+}
+.totalnaTotal{
+    margin-top: -60px;
+    transition: .5s;
+}
+.location22{
+    margin-top: 50px;
+    padding: 0 50px;
+    color: #fff;
+}
+.location22 p{
+    text-align: left;
+}
+.locations22{
+    display: flex;
+    padding: 10px 0;
+    gap: 50px;
+}
+.barangay1, .street1{
+    border-bottom: 2px solid #850C0C;
+    border-left: 2px solid #850C0C;
+    width: 243px;
+    height: 38px;
+}
+.barangay, .street::placeholder{
+    color: #545454;
+    font-style: italic;
+}
+.location22 span{
+    color: #545454;
+    font-style: italic;
+}
+.barangay, .street{
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 3px 0 0 10px;
+    font-family: 'Inria Sans';
+    font-size: 25px;
+    font-style: normal;
+    width: 220px;
+}
+.location22 p{
+    margin: 30px 0 10px 0;
+}
+.promptInPaymentMethod{
+    position: absolute;
+    position: fixed;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+    border: 1px solid #850C0C;
+    visibility: hidden;
+}
+.promptInPaymentMethod h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: Ibarra Real Nova;
+}
+.promptInPaymentMethod p{
+    margin: 10px 0;
+}
+.promptInPaymentMethod span{
+    font-weight: 600;
+}
+.promptInPaymentMethod img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+
+ /*---------- Profile----------*/
+.body{
+    background: linear-gradient(180deg, #383838 0%, rgba(43, 42, 42, 0) 100%);
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content:flex-start;
+    width: 100%;
+    margin: 80px 0 0 70px;
+
+}
+.imageNiIan img{
+    width: 130px;
+}
+.profile{
+    margin-top: 50px;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    height: 50rem;
+}
+.profile h2{
+    font-family: 'Ibarra Real Nova';
+    font-weight: 600;
+    color: #000000;
+}
+.profile .imageNiIan{
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border-radius: 300px;
+    object-fit: cover;
+    margin: 10px 0 20px 110px;
+    border: solid 2px #000;
+}
+.userInfo{
+    border: solid 2px #000;
+    margin-top: 20px;
+    height:40%;
+    padding: 0 40px;
+}
+.name1, .birthDate1, .location1, .mail, .phone{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.name1 img, .birthDate1 img, .location1 img, .mail img, .phone img{
+    border-right: solid 1px #000;
+    padding-right: 15px;
+}
+.updateBtn{
+    margin: 20px 0 0 220px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #8b0a0a;
+}
+.password12, .google12, .facebook12{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    margin: 15px 0;
+    gap: 100px;
+}
+.password12 span, .google12 span, .facebook12 span{
+    color: #8b0a0a;
+    cursor: pointer;
+}
+.google13 span{
+    color: green;
+    font-size: 14px; 
+    position: absolute;
+    font-weight: 400;
+    margin:-10px 0 0 -28.5px;
+    cursor:default;
+}
+.loginInfo{
+    margin-top: 20px;
+}
+.logoutBtn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.logoutBtn{
+    background-color: #850C0C;
+    height: 30px;
+    width: 200px;
+    border-radius: 30px;
+    padding-top: 7px;
+    margin: 25px 0 0 70px;
+}
+.reservation12{
+    margin: 90px 0 0 480px;
+    position: absolute;
+}
+.list1{
+    background-color: #fff;
+    width: 42rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    z-index: 3;
+}
+.reservation12 h1{
+    font-size: 50px;
+    font-family: 'Ibarra Real Nova';
+    font-weight: 400;
+    color: #FFF;
+    margin: 0 0 10px 30px;
+}
+.reservationList h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.baraydan, .totalHanBaraydan{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.priceHanMotor{
+    text-align: center;
+}
+.baraydan{
+    border-bottom: solid 2px #000;
+    width: 622px;
+    padding-right: 20px;
+}
+.totalHanBaraydan{
+    font-weight: 600;
+}
+.baraydanBtn{
+    display: flex;
+    gap: 50px;
+    color: #fff;
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+.amend{
+    margin-top: 10px;
+    background-color: #850C0C;
+    padding: 5px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.closebtn{
+    justify-content: space-between;
+    display: flex;
+}
+.closebtn img{
+    height: 30px;
+    width: 30px;
+    margin: -5px 0 0 0;
+    cursor: pointer;
+}
+.History{
+    color: #fff;
+    margin-top: 70px;
+}
+.History h1{
+    font-size: 50px;
+}
+.History h3{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 50px 0 0 100px;
+}
+.History hr{
+    position: absolute;
+    width: 50px;
+    margin: 54px 0 0 40px;
+}
+.confirmation{
+    position: absolute;
+    background-color: #fff;
+    position: fixed;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 150px;
+    border: solid 1px #000;
+    text-align: center;
+    padding: 20px;
+    z-index: 3;
+    visibility: hidden;
+}
+.confirmation p{
+    font-size: 18px;
+    margin: 25px 0 20px 0;
+    font-weight: 600;
+}
+.yesNo{
+    display: flex;
+    justify-content: space-around;
+}
+.yes, .no{
+    border: solid 1px #000;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.yes p, .no p{
+    margin-top: 0px;
+}
+.yes:hover, .no:hover{
+    background-color: #850C0C;
+    color: #fff;
+    border: 0;
+}
+.confirmation span{
+    color: #850C0C;
+}
+.History span{
+    font-weight: 600;
+    color: #8b0a0a;
+}
+.warapaRenta hr{
+    position: absolute;
+    width: 50px;
+    margin: 11px 0 0 42px;
+}
+.warapaRenta p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 50px 0 0 100px;
+}
+.warapaRenta a{
+    font-weight: 600;
+    color: #b11414;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.warapaRenta{
+    visibility: hidden;
+}
+.loginInfo h3, .profile h3{
+    letter-spacing: 3px;
+}
+.footer1{
+    position: absolute;
+    top: 1200px;
+    width: 100%;
+    height: 290px;
+    background-color: #2B2B2B;
+    border-top: solid #850C0C 5px;
+}
+.footer1 img{
+    width: 150px;
+}
+.footer-col{
+    justify-content: space-between;
+    margin-top: -30px;
+    text-align: center;
+    flex-basis: 60%;
+}
+.footer1 h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Ibarra Real Nova";
+}
+.footer2{
+    position: absolute;
+    top: 1900px;
+    width: 100%;
+    height: 270px;
+    background-color: #2B2B2B;
+    border-top: solid #850C0C 5px;
+}
+.footer2 img{
+    width: 150px;
+}
+.footer-col{
+    justify-content: space-between;
+    margin-top: -30px;
+    text-align: center;
+    flex-basis: 60%;
+}
+.footer2 h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Ibarra Real Nova";
+}
+.footer2 i{
+    margin: 5px;
+}
+.footer2 p{
+    font-family: Hubballi;
+    margin: 0px 0 10px 0;
+    font-size: 20px;
+}
+
+    /*---------- FAQ----------*/
+.FAQs{
+    height: 13vh;
+}
+.FAQss{
+    height: auto;
+    text-align: center;
+}
+.FAQss h1{
+    font-size: 50px;
+    font-weight: 1;
+    color: #b30808;
+    letter-spacing: 5px;
+    margin: 50px 0;
+}
+.faqButton a{
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #3d3d3d;
+}
+.firstline, .secondline{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 50px;
+    align-items: baseline;
+}
+.faqButton a:hover{
+    background-color: #8b0a0a;
+    border:1px solid #8b0a0a;
+}
+.QandAfaq{
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.QandAfaq h1{
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.QandAfaq p{
+    color: #fff;
+    font-size: 17px;
+    user-select: none;
+}
+.borderr{
+    width: 800px;
+    padding: 0 20px 0 0;
+    margin-bottom: 20px;
+}
+.QandAfaq li{
+    color: #b6b4b4;
+    display: none;
+    margin-left: 20px;
+}
+.borderr p:hover{
+    color: #ac0909;
+    cursor: pointer;
+}
+.borderr1{
+    margin: 50px;
+    border-bottom: 0.5px solid #313131;
+    padding-bottom: 50px;
+    width: 70%;
+}
+.QandAfaq img{
+    position: absolute;
+    margin: -17px 0 0 800px;
+    width: 15px;
+}
+.customerSupport{
+    border: none;
+}

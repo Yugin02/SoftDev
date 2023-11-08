@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent&Ride</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Ibarra+Real+Nova:wght@400;600;700&family=Inconsolata:wght@600&family=Inter&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <!----------- HEADER ---------->
+    <header class="header home">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav" id="navlinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="rent.html">RENT</a></li>
+                    <li><a href="Profile.html"><img src="images/iannnn.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="login">
+            <div class="textbox">
+                <h1>Don't Dream it, Ride it!</h1>
+                <p>We offer afordable and quality <br> motorcycles for you to explore <br> Eastern Samar</p>
+                <p><u>Borongan Motorcycles Rentals</u></p>
+                <a class="btn" href="rent.html">Rent Now</a>
+            </div>
+        </div>
+        <img class="image2" id="image2" src="images/image2.png">
+        <img class="image3" id="image3" src="images/image3.png">
+        <p class="text">Let's take it to another level!</p>
+        <a class="text2" id="btnLogIn" onclick="logIn()">Log in</a>
+        <div class="logInProcess">
+            <div class="register">
+                <img class="backbtn" src="images/icon/back.png">
+                <p>Doesn't have an account?</p>
+                <a class="register1">Register</a>
+            </div>
+            <div class="logInProcess1">
+                <h2>LOGIN</h2>
+                <span>Account doesn't exist!</span>
+                <div class="gmail22">
+                    <img src="images/icon/googleColored.png">
+                    <p>Login with Google</p>
+                </div>
+                <div class="orLine">
+                <hr color="#000">
+                <p class="or">or</p>
+                <hr color="#000" >
+                </div>
+                <p>Username</p>
+                <div class="username">
+                    <input type="text" class="userName Lusername" required>
+                </div>
+                <p>Password</p>
+                <div class="password">
+                    <input type="password" class="passWord Lpassword" required>
+                </div>
+                <a href="">forgot password?</a>
+                <div class="logInbtn" onclick="userLogin()">
+                    <p>Log in</p>
+                </div>
+            </div>
+        </div>
+        <div class="registeration">
+            <div class="logIn alreadAcc">
+                <p>Already have an account?</p>
+                <a class="lgnin">Log In</a>
+            </div>
+            <h1>CREATE ACCOUNT</h1>
+            <div class="logNotif">
+                <p class="emailExist">Email Already Exist!</p>
+                <p class="created">Account Created!</p>
+            </div>
+            <div class="registerProcess">
+                <p>Username</p>
+                <div class="username">
+                    <input type="text" class="userName Rusername" required>
+                </div>
+                <p>Email</p>
+                <div class="email">
+                    <input type="email" class="eMail" required>
+                </div>
+                <p>Password</p>
+                <div class="password Rpassword1">
+                    <input type="password" class="passWord Rpassword" required>
+                </div>
+                <p>Confirm Password</p>
+                <div class="password CpassWord1">
+                    <input type="password" class="CpassWord" required>
+                </div>
+                <div class="logInbtn registration">
+                    <p onclick="register()">Register</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <!----------- HOW IT WORKS  ---------->
+    <section class="howItWorks">
+        <h1>HOW IT WORKS</h1>
+        <div class="row">
+            <div class="howitworks-col">
+                <h3 class="text3">Search and <br> Select</h3>
+                <li>Search for available motors based on your preferences, and select the one you want to rent.</li>
+            </div>
+            <div class="howitworks-col">
+                <h3 class="text3">Reservation <br> and Payment</h3>
+                <li>Make a reservation by providing your information and payment details.</li>
+            </div>
+            <div class="howitworks-col">
+                <h3 class="text3">Pickup and <br> Return</h3>
+                <li>On the rental date, Pick up the motor, use it as needed, and return it following the rental terms and conditions.</li>
+            </div>
+        </div>
+        <hr color="#850C0C" 
+            size="5">
+    </section>
+
+        <!----------- LOCATION ---------->
+    <section class="location">
+        <h1>LOCATION</h1>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15632.721921029992!2d125.4218098!3d11.6104792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3308e5fa454e39fb%3A0xa00ae69ac0f214c4!2sBorongan%20Motorcycle%20Rentals!5e0!3m2!1sen!2sph!4v1696428508904!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr color="#850C0C" 
+            size="5">
+    </section>
+
+        <!----------- REVIEWS ---------->
+    <section class="reviews">
+        <h1>What our custormers say</h1>
+        <div class="row reviews-row">
+            <div class="reviews-col">
+                <img src="images/Adriane.jpeg">
+                <p>satisfied with the service. the motorbike was in good condition.</p>
+                <p><span>- Eugene G.</span></p>
+            </div>
+            <div class="reviews-col">
+                <img src="images/joel.jpg">
+                <p>satisfied with the service. the motorbike was in good condition.</p>
+                <p><span>- Joel C.</span></p>
+            </div>
+            <div class="reviews-col">
+                <img src="images/Eugene.jpeg">
+                <p>satisfied with the service. the motorbike was in good condition.</p>
+                <p><span>- Adriane G.</span></p>
+            </div>
+        </div><hr color="#850C0C" 
+        size="5">
+    </section>
+
+        <!----------- Contact us ---------->
+    <section class="ContactUs">
+        <aside class="contactOption">
+            <div class="FAQsCallUs">
+                <div class="FAQS">
+                    <h2>FAQs</h2>
+                    <p>Look through our Frequently Asked Question to find the info you need.</p>
+                    <a href="FAQ.html">Visit FAQs</a>
+                </div>
+                <div class="callUs">
+                    <h2>Call US</h2>
+                    <p>If you'd like to talk to us, you can call us at at <span>+639700689814</span></p>
+                    <a href="">Call Us</a>
+                </div>
+            </div>
+            <div class="chatUsEmail">
+                <div class="chatUs">
+                    <h2>Chat Us</h2>
+                    <p>Got a question you need answer right away? We're here for that.</p>
+                    <a href="">Chat Now</a>
+                </div>
+                <div class="Email">
+                    <h2>Email</h2>
+                    <p>You can simply send us an email. <span>rent&ride@gmail.com</span></p>
+                    <a href="">Email Us</a>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+        <!----------- FOOTER ---------->
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-col one">
+                <img src="images/logo.png">
+                <p>Don't dream it, Ride it!</p>
+            </div>
+            <div class="footer-col two">
+                <h2>Contact Us</h2>
+                <i class="fa fa-envelope"><span>Rent&ride@gmail.com</span></i><br>
+                <i class="fa fa-phone"><span>+639700689814</span></i>
+            </div>
+            <div class="footer-col three">
+                <h2>Follow Us</h2>
+                <p>Stay connected with us on social media to get latest
+                    news and updates.
+                </p>
+                <div class="logo">
+                    <div class="facebook22">
+                        <img src="images/icon/ri_facebook-fill.png">
+                    </div>
+                    <div class="instagram22">
+                        <img src="images/icon/ri_instagram-fill.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reserved">
+            <p>All right reserved. © 2023</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
